@@ -1,4 +1,5 @@
 import { useState } from "react";
+import axios from "axios";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
@@ -18,7 +19,10 @@ function App() {
       </div>
       <h1>Vite + React AAA</h1>
       <div className='card'>
-        <button onClick={() => setCount((count) => count + 1)}>
+        <button
+          className='btn btn-primary'
+          onClick={() => setCount((count) => count + 1)}
+        >
           count is {count}
         </button>
         <p>
