@@ -19,19 +19,14 @@ function App() {
       </div>
       <h1>Vite + React AAA</h1>
       <div className='card'>
-        <button
-          className='btn btn-primary'
-          onClick={() => setCount((count) => count + 1)}
-        >
+        <button className='btn btn-primary' onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
         <p>
           Edit <code>src/App.jsx</code> and save to test HMR
         </p>
       </div>
-      <p className='read-the-docs'>
-        Click on the Vite and React logos to learn more
-      </p>
+      <p className='read-the-docs'>Click on the Vite and React logos to learn more</p>
     </>
   );
 }
