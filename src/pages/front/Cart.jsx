@@ -130,7 +130,7 @@ const Cart = () => {
               <td className="text-end" colSpan="3">
                 總計
               </td>
-              <td className="text-end">{currency(cart.final_total)}</td>
+              <td className="text-end">{currency(cart?.final_total)}</td>
             </tr>
           </tfoot>
         </table>
