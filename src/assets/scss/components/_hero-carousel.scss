@@ -1,0 +1,97 @@
+.hero-carousel {
+  max-width: 1920px;
+  margin: 0 auto;
+
+  .carousel-item {
+    position: relative;
+
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+
+  .carousel-indicators {
+    left: 20px;
+    right: auto;
+    flex-direction: column;
+    gap: 8px;
+
+    [data-bs-target] {
+      width: 2px;
+      height: 2px;
+      border: none;
+      border-radius: 50%;
+      background-color: #fff !important;
+      opacity: 0.4;
+      transition: all 0.3s ease;
+    }
+    .active {
+      width: 2px;
+      height: 60px;
+      border: none;
+      background-color: #fff !important;
+      border-radius: 0;
+      opacity: 1;
+    }
+  }
+
+  .carousel-caption {
+    position: absolute !important;
+    right: 120px !important;
+    bottom: 80px !important;
+    left: auto !important;
+    text-align: left !important;
+    padding: 0 !important;
+    color: #2c2c2c;
+    z-index: 10;
+    width: 306px;
+    max-width: 306px;
+
+    .caption-content {
+      display: flex;
+      flex-direction: column;
+      gap: 80px;
+    }
+
+    .caption-text-group {
+      display: flex;
+      flex-direction: row;
+      gap: 24px;
+      height: 440px;
+    }
+
+    .caption-subtitle {
+      width: 20px;
+      height: 216px;
+      margin: 0;
+      font-family: 'Noto Sans TC', sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      letter-spacing: 0.04em;
+      text-align: center;
+      writing-mode: vertical-rl;
+      text-orientation: upright;
+      color: #2c2c2c;
+      opacity: 0.8;
+    }
+
+    .caption-title {
+      width: 56px;
+      height: 432px;
+      margin: 0;
+      font-family: 'Noto Serif TC', serif;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 120%;
+      letter-spacing: 0.02em;
+      text-align: center;
+      writing-mode: vertical-rl;
+      text-orientation: upright;
+      color: #2c2c2c;
+      opacity: 1;
+    }
+  }
+}
