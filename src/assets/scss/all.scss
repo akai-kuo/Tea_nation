@@ -1,5 +1,5 @@
 // [新增] Google Fonts — Noto Serif TC 思源宋體 + Noto Sans 思源黑體
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif+TC:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Noto+Serif+TC:wght@200..900&display=swap');
 
 @import "bootstrap/scss/functions";
 @import "./utils/variables";
@@ -13,3 +13,4 @@
 
 // 元件樣式
 @import "./components/hero-carousel";
+@import "./components/sec1";
