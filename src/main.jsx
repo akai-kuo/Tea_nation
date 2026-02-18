@@ -1,6 +1,7 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 
+import "bootstrap";
 import "./assets/scss/all.scss";
 import "./assets/style.css";
 

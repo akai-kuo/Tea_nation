@@ -1,7 +1,11 @@
+import HeroBanner from "../../components/HeroBanner";
+import Sec1 from "../../components/Sec1";
+
 const Home = () => {
   return (
     <>
-      <h1>首頁</h1>
+      <HeroBanner />
+      <Sec1 />
     </>
   );
 };
