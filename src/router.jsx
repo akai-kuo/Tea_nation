@@ -1,22 +1,23 @@
-import { createHashRouter } from "react-router";
 // react router
+import { createHashRouter } from "react-router-dom";
 
+// Layouts
 import FrontendLayout from "./Layouts/FrontendLayout";
 import AdminLayout from "./Layouts/AdminLayout";
-// Layouts
 
+// Frontend pages
 import Home from "./pages/front/Home";
 import About from "./pages/front/About";
 import Products from "./pages/front/Products";
 import SingleProduct from "./pages/front/SingleProduct";
 import Cart from "./pages/front/Cart";
-// Frontend pages
 
-import Dashboard from "./pages/admin/Dashboard";
-import ProductManage from "./pages/admin/ProductManage";
+//後台
+import AdminOrders from "./pages/admin/AdminOrders";
+import AdminProducts from "./pages/admin/AdminProducts";
 
-import NotFound from "./pages/front/NotFound";
 // 404 page
+import NotFound from "./pages/front/NotFound";
 
 export const router = createHashRouter([
   {
@@ -50,12 +51,12 @@ export const router = createHashRouter([
     element: <AdminLayout />,
     children: [
       {
-        index: true, // 預設首頁
-        element: <Dashboard />,
+        path: "orders",
+        element: <AdminOrders />,
       },
       {
-        path: "productmanage",
-        element: <ProductManage />,
+        path: "adminProducts",
+        element: <AdminProducts />,
       },
     ],
   },
