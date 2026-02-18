@@ -5,14 +5,16 @@ import { createHashRouter } from "react-router-dom";
 import FrontendLayout from "./Layouts/FrontendLayout";
 import AdminLayout from "./Layouts/AdminLayout";
 
-// Frontend pages
+// Frontend pages(前台)
 import Home from "./pages/front/Home";
 import About from "./pages/front/About";
 import Products from "./pages/front/Products";
 import SingleProduct from "./pages/front/SingleProduct";
 import Cart from "./pages/front/Cart";
+import Login from "./pages/front/Login";
+import Register from "./pages/front/Register";
 
-//後台
+//Admin pages(後台)
 import AdminOrders from "./pages/admin/AdminOrders";
 import AdminProducts from "./pages/admin/AdminProducts";
 
@@ -43,6 +45,14 @@ export const router = createHashRouter([
       {
         path: "cart",
         element: <Cart />,
+      },
+      {
+        path: "login",
+        element: <Login />,
+      },
+      {
+        path: "register",
+        element: <Register />,
       },
     ],
   },

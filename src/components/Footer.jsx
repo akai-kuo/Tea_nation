@@ -23,7 +23,7 @@ const Footer = () => {
                             </div>
                         </div>
         
-                        {/* 右側：聯絡資訊與社群圖標 */}
+                        {/* 右側：聯絡資訊 */}
                         <div className="col-12 col-md-6 text-center text-md-end">
                             <div className="mb-3 text-muted">
                                 <p className="mb-1">
@@ -34,7 +34,7 @@ const Footer = () => {
                                 </p>
                             </div>
                             
-                            {/* 社群按鈕 (圓圈樣式) */}
+                            {/* 社群按鈕(圓圈樣式) */}
                             <div className="d-flex justify-content-center justify-content-md-end gap-3">
                                 <a href="#" className="btn btn-outline-secondary rounded-circle d-flex align-items-center justify-content-center" style={{ width: '50px', height: '50px' }}>
                                     <img src={facebook} alt="" />
