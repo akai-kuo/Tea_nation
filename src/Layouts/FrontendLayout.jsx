@@ -121,7 +121,7 @@ const FrontendLayout = () => {
         </div>
       </nav>
 
-      <main>
+      <main style={{ paddingTop: "72px" }}>
         <Outlet />
       </main>
 
@@ -131,4 +131,3 @@ const FrontendLayout = () => {
 };
 
 export default FrontendLayout;
-
