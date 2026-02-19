@@ -3,7 +3,6 @@
 // ========================================
 .hero-carousel {
   width: 100%;
-  max-width: 1920px;
   aspect-ratio: 1920 / 1000;
   margin: 0 auto;
 
@@ -144,7 +143,7 @@
     .caption-bottom {
       position: absolute;
       right: 45.29%;    // 587/1296 (content right 494 + 93)
-      bottom: 16.8%;    // 168/1000
+      top: 64%;         // 640/1000 (content top 12% + 間距 520/1000 = 52%)
       width: clamp(60px, 6.25vw, 120px);   // 120/1920
       height: clamp(120px, 12.5vw, 240px); // 240/1920
       display: flex;
