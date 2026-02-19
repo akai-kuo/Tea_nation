@@ -31,7 +31,7 @@ export const router = createHashRouter([
         element: <Home />,
       },
       {
-        path: "about",
+        path: "aboutUs",
         element: <About />,
       },
       {

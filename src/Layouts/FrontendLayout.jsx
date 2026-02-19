@@ -1,10 +1,10 @@
 import { Outlet, Link } from "react-router-dom";
 import { useState } from "react";
 
-import TeaNationLogo from "../assets/image/TeaNationLogo.jpg";
-import menu from "../assets/image/menu.png";
-import cartIcon from "../assets/image/cart.png";
-import person from "../assets/image/person.png";
+import TeaNationLogo from "../assets/images/TeaNationLogo.jpg";
+import menu from "../assets/images/menu.png";
+import cartIcon from "../assets/images/cart.png";
+import person from "../assets/images/person.png";
 
 import Footer from "../components/Footer";
 
@@ -29,9 +29,9 @@ const FrontendLayout = () => {
             </Link>
           </div>
 
-          {/* 右側組合區：這區塊在手機版會維持在右邊 */}
+          {/* 右側組合區 */}
           <div className="d-flex align-items-center gap-3 order-lg-last">
-            {/* 購物車：放在外面，確保 RWD 時不會被收進漢堡選單 */}
+            {/* 購物車 */}
             <Link
               className="nav-link text-dark p-0 d-flex align-items-center mx-2"
               to="/cart"
@@ -62,7 +62,7 @@ const FrontendLayout = () => {
                 {/* 中間：導覽連結 */}
                 <ul className="navbar-nav mx-auto gap-lg-4 text-center">
                   <li className="nav-item">
-                    <Link className="nav-link" to="/about" onClick={closeNav}>
+                    <Link className="nav-link" to="/aboutUs" onClick={closeNav}>
                       關於品牌
                     </Link>
                   </li>

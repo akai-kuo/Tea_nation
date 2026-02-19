@@ -1,59 +1,98 @@
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 html,
 body {
     height: 100%;
     text-align: center;
 }
-
 .login {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-
 .form-signin {
     width: 100%;
     max-width: 330px;
     padding: 15px;
     margin: auto;
 }
-
 img {
     object-fit: contain;
     max-width: 100%;
 }
-
 .primary-image {
     height: 300px;
 }
-
 .images {
     height: 150px;
 }
-
 h1{
     margin-top: 3%;
     text-align: center;
 }
 
+/* 導覽列 */
 .nav-transition-wrapper {
     display: grid !important;
     grid-template-rows: 0fr;
     transition: grid-template-rows 0.35s ease-in-out;
     overflow: hidden;
     }
-
 .nav-transition-wrapper.show {
     grid-template-rows: 1fr !important;
 }
-
 @media (min-width: 992px) {
     .nav-transition-wrapper {
         grid-template-rows: 1fr !important;
         overflow: visible !important;
     }
 }
-
 .nav-transition-inner {
     min-height: 0;
 }
+
+/* about 頁面 */
+/* section 1 */
+/* About 綠色背景圖片佔位區 */
+.about-hero-bg {
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+    filter: brightness(0.6); 
+}
+.z-1 {
+    z-index: 1;
+}
+
+/* section 2 */
+/* 垂直文字共用設定 */
+.vertical-text {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+}
+/* 標題群組設定 */
+.title-group {
+    transform: translateX(0);
+    transition: transform 0.5s ease-in-out;
+}
+/* 詳細內文群組設定 */
+.details-group {
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+/* 標題群組往左移 */
+.brand-feature-col:hover .title-group {
+    transform: translateX(-40px); 
+}
+/* 詳細內文群組淡入並滑回原位 */
+.brand-feature-col:hover .details-group {
+    opacity: 1;
+    transform: translateX(0);
+}
+

@@ -1,12 +1,12 @@
-import TeaNationLogo from "../assets/image/TeaNationLogo.jpg";
-import facebook from "../assets/image/facebook.png";
-import ig from "../assets/image/ig.png";
-import phone from "../assets/image/phone.png";
-import clock from "../assets/image/clock.png";
+import TeaNationLogo from "../assets/images/TeaNationLogo.jpg";
+import facebook from "../assets/images/facebook.png";
+import ig from "../assets/images/ig.png";
+import phone from "../assets/images/phone.png";
+import clock from "../assets/images/clock.png";
 
 const Footer = () => {
     return (<>
-            <footer className="bg-light py-4 mt-auto border-top fixed-bottom">
+            <footer className="bg-light py-4 mt-auto border-top">
                 <div className="container">
                     <div className="row gy-4 align-items-center">
                         {/* 左側：品牌標語與版權聲明 */}
