@@ -24,7 +24,7 @@ const FrontendLayout = () => {
               <img
                 src={TeaNationLogo}
                 alt="Tea Nation"
-                style={{ height: "60px", transition: "0.3s" }}
+                style={{ height: " 71.2px", transition: "0.3s" }}
               />
             </Link>
           </div>
