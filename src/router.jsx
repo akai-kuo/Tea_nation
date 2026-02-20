@@ -8,6 +8,7 @@ import AdminLayout from "./Layouts/AdminLayout";
 // Frontend pages(前台)
 import Home from "./pages/front/Home";
 import About from "./pages/front/About";
+import Knowledge from "./pages/front/Knowledge";
 import Products from "./pages/front/Products";
 import SingleProduct from "./pages/front/SingleProduct";
 import Cart from "./pages/front/Cart";
@@ -33,6 +34,10 @@ export const router = createHashRouter([
       {
         path: "aboutUs",
         element: <About />,
+      },
+      {
+        path: "knowledge",
+        element: <Knowledge />,
       },
       {
         path: "product",
