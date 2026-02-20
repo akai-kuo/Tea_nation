@@ -1,5 +1,5 @@
-import { useState } from "react"; // 必須匯入 useState
-import { Outlet, Link } from "react-router-dom"; // 確保匯入 Link
+import { useState } from "react";
+import { Outlet, Link } from "react-router-dom";
 import Footer from "../components/Footer";
 
 import TeaNationLogo from "../assets/images/Navbar&Footer/TeaNationLogo.jpg";
@@ -14,7 +14,6 @@ const AdminLayout = () => {
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-light bg-dark navbar-dark border-bottom shadow-sm py-0">
-        {/* 我幫你把背景改成 bg-dark，這樣可以一眼區分前台與後台 */}
         <div className="container">
           {/* 左側：Logo */}
           <div className="navbar-brand m-0 py-0">
@@ -27,7 +26,6 @@ const AdminLayout = () => {
                   transition: "0.3s",
                   filter: "brightness(0) invert(1)",
                 }}
-                // filter 可以讓黑 Logo 變白 Logo
               />
             </Link>
           </div>

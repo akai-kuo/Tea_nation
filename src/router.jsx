@@ -9,7 +9,9 @@ import AdminLayout from "./Layouts/AdminLayout";
 import Home from "./pages/front/Home";
 import About from "./pages/front/About";
 import Knowledge from "./pages/front/Knowledge";
-import Products from "./pages/front/Products";
+import ProductsTeaCan from "./pages/front/ProductsTeaCan";
+import ProductsGiftBox from "./pages/front/ProductsGiftBox";
+import ProductsTeaSet from "./pages/front/ProductsTeaSet";
 import SingleProduct from "./pages/front/SingleProduct";
 import Cart from "./pages/front/Cart";
 import Login from "./pages/front/Login";
@@ -40,8 +42,16 @@ export const router = createHashRouter([
         element: <Knowledge />,
       },
       {
-        path: "product",
-        element: <Products />,
+        path: "productsTeaCan",
+        element: <ProductsTeaCan />,
+      },
+      {
+        path: "productsGiftBox",
+        element: <ProductsGiftBox />,
+      },
+      {
+        path: "productsTeaSet",
+        element: <ProductsTeaSet />,
       },
       {
         path: "product/:id", // 動態參數
