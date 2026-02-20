@@ -50,7 +50,7 @@ export default function HeroBanner() {
               className="carousel-bg d-block w-100"
               alt={slide.title}
             />
-            <div className="carousel-caption d-none d-md-block">
+            <div className="carousel-caption">
               <div className="caption-container">
                 {/* 左側 Indicator */}
                 <div className="caption-left">

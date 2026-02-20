@@ -10,6 +10,11 @@
   align-items: center;
   justify-content: center;
 
+  @media (max-width: 767.98px) {
+    padding: 40px 0;
+    min-height: auto;
+  }
+
   // ========================================
   // Content — 1920 x 707
   // ========================================
@@ -18,6 +23,11 @@
     min-height: clamp(353.5px, 36.823vw, 707px);        // 707/1920
     display: flex;
     align-items: stretch;
+
+    @media (max-width: 767.98px) {
+      flex-direction: column;
+      min-height: auto;
+    }
   }
 
   // ========================================
@@ -37,6 +47,12 @@
       height: 100%;
       display: block;
       object-fit: cover;
+    }
+
+    @media (max-width: 767.98px) {
+      width: 100%;
+      min-width: unset;
+      aspect-ratio: 4 / 3;
     }
   }
 
@@ -108,6 +124,12 @@
     display: flex;
     flex-direction: column;
     gap: clamp(50px, 5.208vw, 100px);                   // 100/1920
+
+    @media (max-width: 767.98px) {
+      min-height: auto;
+      padding: 24px 20px;
+      gap: 32px;
+    }
   }
 
   // ========================================
@@ -153,6 +175,10 @@
     line-height: 120%;
     letter-spacing: 0.02em;
     color: var(--color-neutral-700, #404040);
+
+    @media (max-width: 767.98px) {
+      font-size: 36px;
+    }
   }
 
   // ========================================
@@ -161,6 +187,11 @@
   .sec2-right-desc {
     width: 89.02%;      // 892/1002
     margin-left: auto;
+
+    @media (max-width: 767.98px) {
+      width: 100%;
+      margin-left: 0;
+    }
 
     p {
       margin: 0;
@@ -194,6 +225,11 @@
     display: flex;
     flex-direction: column;
     gap: clamp(2px, 0.208vw, 4px);                      // 4/1920
+
+    @media (max-width: 767.98px) {
+      width: 100%;
+      margin-left: 0;
+    }
   }
 
   .blog-date {

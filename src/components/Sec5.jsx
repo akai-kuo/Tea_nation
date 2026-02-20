@@ -40,6 +40,7 @@ export default function Sec5() {
             <p className="sec5-desc">舒展的茶葉，是我們對誠信最直白的告白</p>
           </div>
         </div>
+        {/* Desktop: 三欄並排 */}
         <div className="sec5-right">
           {promiseCards.map((card, index) => (
             <div className="promise-card" key={index}>
@@ -54,6 +55,35 @@ export default function Sec5() {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Mobile: 輪播 */}
+        <div
+          id="sec5Carousel"
+          className="carousel slide sec5-carousel"
+          data-bs-ride="carousel"
+          data-bs-interval="4000"
+        >
+          <div className="carousel-inner">
+            {promiseCards.map((card, index) => (
+              <div
+                key={index}
+                className={`carousel-item ${index === 0 ? "active" : ""}`}
+              >
+                <div className="promise-card">
+                  <p className="promise-card-title">{card.title}</p>
+                  <div className="promise-body">
+                    <img className="promise-img" src={card.img} alt={card.title} />
+                    <div className="promise-body2">
+                      <h4 className="promise-body2-title">{card.reviewTitle}</h4>
+                      <p className="promise-body2-subtitle">{card.reviewText}</p>
+                      <p className="promise-body2-name">{card.name}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
