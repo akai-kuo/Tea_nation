@@ -1,10 +1,10 @@
 import { Outlet, Link } from "react-router-dom";
 import { useState } from "react";
 
-import TeaNationLogo from "../assets/images/TeaNationLogo.jpg";
-import menu from "../assets/images/menu.png";
-import cartIcon from "../assets/images/cart.png";
-import person from "../assets/images/person.png";
+import TeaNationLogo from "../assets/images/Navbar&Footer/TeaNationLogo.jpg";
+import menu from "../assets/images/Navbar&Footer/menu.png";
+import cartIcon from "../assets/images/Navbar&Footer/cart.png";
+import person from "../assets/images/Navbar&Footer/person.png";
 
 import Footer from "../components/Footer";
 
@@ -67,7 +67,7 @@ const FrontendLayout = () => {
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link className="nav-link" to="/product" onClick={closeNav}>
+                    <Link className="nav-link" to="/knowledge" onClick={closeNav}>
                       讀茶知識
                     </Link>
                   </li>

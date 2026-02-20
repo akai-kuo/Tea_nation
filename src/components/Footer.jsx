@@ -1,8 +1,8 @@
-import TeaNationLogo from "../assets/images/TeaNationLogo.jpg";
-import facebook from "../assets/images/facebook.png";
-import ig from "../assets/images/ig.png";
-import phone from "../assets/images/phone.png";
-import clock from "../assets/images/clock.png";
+import TeaNationLogo from "../assets/images/Navbar&Footer/TeaNationLogo.jpg";
+import facebook from "../assets/images/Navbar&Footer/facebook.png";
+import ig from "../assets/images/Navbar&Footer/ig.png";
+import phone from "../assets/images/Navbar&Footer/phone.png";
+import clock from "../assets/images/Navbar&Footer/clock.png";
 
 const Footer = () => {
     return (<>

@@ -1,13 +1,13 @@
 import React from "react";
 
-import aboutUsBackground from "../../assets/images/aboutUsBackground.png";
-import ChengShanJi from "../../assets/images/Cheng-Shan-Ji.png";
-import YuChingYeh from "../../assets/images/Yu-Ching-Yeh.png";
-import YunShiSu from "../../assets/images/Yun-Shi-Su.png";
-import HengXuLin from "../../assets/images/Heng-Xu-Lin.png";
-import awards from "../../assets/images/Awards.png";
-import michelin from "../../assets/images/michelin.png";
-import flavor from "../../assets/images/flavor.png";
+import aboutUsBackground from "../../assets/images/About/aboutUsBackground.png";
+import ChengShanJi from "../../assets/images/About/Cheng-Shan-Ji.png";
+import YuChingYeh from "../../assets/images/About/Yu-Ching-Yeh.png";
+import YunShiSu from "../../assets/images/About/Yun-Shi-Su.png";
+import HengXuLin from "../../assets/images/About/Heng-Xu-Lin.png";
+import awards from "../../assets/images/About/Awards.png";
+import michelin from "../../assets/images/About/michelin.png";
+import flavor from "../../assets/images/About/flavor.png";
 
 
 const About = () => {

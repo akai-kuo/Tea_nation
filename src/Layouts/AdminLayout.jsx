@@ -2,8 +2,8 @@ import { useState } from "react"; // 必須匯入 useState
 import { Outlet, Link } from "react-router-dom"; // 確保匯入 Link
 import Footer from "../components/Footer";
 
-import TeaNationLogo from "../assets/images/TeaNationLogo.jpg";
-import menu from "../assets/images/menu.png";
+import TeaNationLogo from "../assets/images/Navbar&Footer/TeaNationLogo.jpg";
+import menu from "../assets/images/Navbar&Footer/menu.png";
 
 const AdminLayout = () => {
   const [isNavCollapsed, setIsNavCollapsed] = useState(true);
