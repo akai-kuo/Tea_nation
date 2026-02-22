@@ -14,6 +14,7 @@ import ProductsGiftBox from "./pages/front/ProductsGiftBox";
 import ProductsTeaSet from "./pages/front/ProductsTeaSet";
 import SingleProduct from "./pages/front/SingleProduct";
 import Cart from "./pages/front/Cart";
+import OderInformation from "./pages/front/OderInformation";
 import Login from "./pages/front/Login";
 import Register from "./pages/front/Register";
 
@@ -62,6 +63,10 @@ export const router = createHashRouter([
         element: <Cart />,
       },
       {
+        path: "oderInformation",
+        element: <OderInformation />,
+      },
+      {
         path: "login",
         element: <Login />,
       },
@@ -80,7 +85,7 @@ export const router = createHashRouter([
         element: <AdminOrders />,
       },
       {
-        path: "adminProducts",
+        path: "products",
         element: <AdminProducts />,
       },
     ],
